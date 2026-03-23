@@ -207,6 +207,22 @@ transform:scale(1.1);
     margin:10px 0;
     display:block;
   }
+
+.footer-inner{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-content{
+text-align:center;
+padding:20px;
+}
+
+.hero-title{
+font-size:2rem;
+max-width:90%;
+margin:auto;
+}
 }
 
 nav{
