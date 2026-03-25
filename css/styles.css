@@ -193,6 +193,9 @@ transform:scale(1.1);
 @media(max-width:768px){
   nav{
     display:flex;
+    font-size:1.8rem;
+    line-height:1.2;
+    word-break:break-word;
     flex-direction:column;
     position:absolute;
     top:70px;
@@ -225,9 +228,7 @@ margin:auto;
 }
 }
 
-nav{
-display:none;
-}
+
 
 
 /* HERO ESTILO APPLE */
@@ -469,10 +470,4 @@ font-size:13px;
 color:#64748b;
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-.footer-inner{
-flex-direction:column;
-text-align:center;
-}
-}
+
