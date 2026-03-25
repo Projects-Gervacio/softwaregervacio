@@ -60,4 +60,17 @@ heroBg.style.transform = `scale(${1.2 + scroll * 0.0005})`;
 
 heroContent.style.transform = `translateY(${scroll * 0.2}px) scale(${1 - scroll * 0.0005})`;
 
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+document.querySelectorAll("#nav a").forEach(link=>{
+  link.addEventListener("click", ()=>{
+    nav.classList.remove("active");
+  });
+});
+
 });
