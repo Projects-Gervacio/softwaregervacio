@@ -4,30 +4,45 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Pentesting Web & Software | Hack Mark</title>
+      
       <meta name="description" content="Desarrollo web y pruebas de seguridad en aplicaciones web en Morelia. Detectamos vulnerabilidades y protegemos tu negocio.">
       <link rel="stylesheet" href="css/styles.css">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
    </head>
    <body>
       <header class="header">
-         <div class="container nav-bar">
-            <img src="assets/img/logo_new2.png" class="logo">
-            <nav>
-               <a href="#inicio">Inicio</a>
-               <a href="#servicios">Servicios</a>
-               
-               <a href="#planes">Planes</a>
-               <a href="#contacto">Contacto</a>
-            </nav>
-         </div>
-      </header>
+      <div class="container nav-bar">
+
+        <img src="assets/img/logo_new2.png" class="logo">
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <div class="menu-toggle" id="menu-toggle">
+          ☰
+        </div>
+
+        <!-- MENÚ -->
+        <nav id="nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#planes">Planes</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+      </div>
+    </header>
       <section class="hero" id="inicio">
          <div id="particles"></div>
          <div class="overlay"></div>
          <div class="hero-bg"></div>
          <div class="container hero-content">
             <h1 class="hero-title">
-              Pentesting & Desarrollo de Aplicaciones Web
+              <span class="desktop">
+                Pentesting & Desarrollo de Aplicaciones Web
+              </span>
+              <span class="mobile">
+                Pentesting & Desarrollo<br>
+                Web Seguro
+              </span>
             </h1>
             <p class="hero-subtitle">
               aRealizamos Pruebas de Seguridad a Aplicaciones Web y Creación de Sitios Web para tu Negocio. 
