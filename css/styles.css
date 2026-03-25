@@ -268,7 +268,7 @@ display:none;
 position:absolute;
 width:120%;
 height:120%;
-background:url("../assets/img/logo.png") center/cover no-repeat;
+background:url("../assets/img/logo_new3.png") center/cover no-repeat;
 z-index:-2;
 transform:scale(1.2);
 transition:transform .3s ease-out;
