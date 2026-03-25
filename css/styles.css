@@ -186,6 +186,11 @@ transition:.3s;
 transform:scale(1.1);
 }
 
+nav{
+  display:flex;
+  gap:20px;
+}
+
 @media(max-width:768px){
 
   .menu-toggle{
@@ -214,53 +219,40 @@ transform:scale(1.1);
   nav.active{
     display:flex;
   }
+
   
-  nav{
-    display:flex;
-    font-size:1.8rem;
-    line-height:1.2;
-    word-break:break-word;
-    flex-direction:column;
-    position:absolute;
-    top:70px;
-    right:0;
-    background:#000;
-    width:100%;
-    text-align:center;
-    padding:20px 0;
-  }
 
   nav a{
     margin:10px 0;
     display:block;
   }
 
-.footer-inner{
-flex-direction:column;
-text-align:center;
-}
+  .footer-inner{
+  flex-direction:column;
+  text-align:center;
+  }
 
-.hero-content{
-text-align:center;
-padding:20px;
-}
+  .hero-content{
+  text-align:center;
+  padding:20px;
+  }
 
-.hero-title{
-font-size:2rem;
-max-width:90%;
-margin:auto;
-}
-nav{
+  .hero-title{
+  font-size:2rem;
+  max-width:90%;
+  margin:auto;
+  }
+  nav{
+      display:none;
+    }
+
+  .desktop{
     display:none;
   }
 
-.desktop{
-  display:none;
-}
-
-.mobile{
-  display:block;
-}
+  .mobile{
+    display:block;
+  }
 }
 
 .mobile{
@@ -307,9 +299,7 @@ border:1px solid rgba(255,255,255,.15);
 
 .menu-toggle{
   display:none;
-  font-size:28px;
-  color:white;
-  cursor:pointer;
+  
 }
 
 /* TEXTO NEON */
