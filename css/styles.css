@@ -65,11 +65,7 @@ overflow:hidden;
 background:url("../assets/img/fondo3.png") center/cover;
 }
 
-.overlay{
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.55);
-}
+
 
 #particles{
 position:absolute;
@@ -88,7 +84,7 @@ max-width:700px;
 background:rgba(255,255,255,0.08);
 backdrop-filter:blur(10px);
 
-padding:80px;
+padding:90px;
 border-radius:15px;
 border:1px solid rgba(255,255,255,0.15);
 }
@@ -191,6 +187,34 @@ transform:scale(1.1);
 }
 
 @media(max-width:768px){
+
+  .menu-toggle{
+    display:block;
+  }
+
+  nav{
+    position:absolute;
+    top:70px;
+    right:0;
+    width:100%;
+    background:#000;
+    display:none;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+    z-index:999;
+  }
+
+  nav a{
+    display:block;
+    margin:15px 0;
+    font-size:18px;
+  }
+
+  nav.active{
+    display:flex;
+  }
+  
   nav{
     display:flex;
     font-size:1.8rem;
@@ -226,21 +250,25 @@ font-size:2rem;
 max-width:90%;
 margin:auto;
 }
+nav{
+    display:none;
+  }
+
+.desktop{
+  display:none;
+}
+
+.mobile{
+  display:block;
+}
+}
+
+.mobile{
+display:none;
 }
 
 
 
-
-/* HERO ESTILO APPLE */
-
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-position:relative;
-overflow:hidden;
-}
 
 /* Fondo animado */
 
@@ -254,12 +282,12 @@ transform:scale(1.2);
 transition:transform .3s ease-out;
 }
 
-/* Overlay */
+
 
 .overlay{
 position:absolute;
 inset:0;
-background:rgba(0,0,0,.55);
+background:rgba(0,0,0,.80);
 z-index:-1;
 }
 
@@ -271,13 +299,18 @@ color:white;
 max-width:750px;
 padding:50px;
 
-background:rgba(255,255,255,0.08);
+background:rgba(255,255,255,0);
 backdrop-filter:blur(10px);
 border-radius:18px;
 border:1px solid rgba(255,255,255,.15);
 }
 
-/* Animación texto */
+.menu-toggle{
+  display:none;
+  font-size:28px;
+  color:white;
+  cursor:pointer;
+}
 
 /* TEXTO NEON */
 
