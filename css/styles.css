@@ -255,9 +255,7 @@ nav{
   }
 }
 
-.mobile{
-display:none;
-}
+
 
 
 
@@ -493,4 +491,10 @@ font-size:13px;
 color:#64748b;
 }
 
+.desktop{
+  display:block;
+}
 
+ .mobile{
+  display:none;
+}
